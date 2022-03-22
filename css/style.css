@@ -14,7 +14,6 @@ main {
     height: calc(100% - 8rem );
     width: 100%;
     overflow: hidden;
-    background-color: aqua;
 }
 
 ul {
@@ -23,8 +22,13 @@ ul {
 
 
 a {
+    font-weight: 500;
     text-decoration: none;
     color: grey;
+}
+
+a:hover {
+    color: #ffffff;
 }
 
 .container {
@@ -51,29 +55,98 @@ a {
 /* NAV */
 nav {
     float: left;
-    padding: .5em;
+    padding: 1em;
     height: 100%;
     width: 16rem;
-    
-    /* debug */
-    /* height: calc(100vh - 8rem); */
-    background-color: rgb(208, 255, 0);
+    background-color: #000000;
 }
 
 .nav-top {
-    height: calc(100% - 3rem);
-    background-color: #535353;
+    height: 11rem;
+}
+
+.logo img {
+    height: 2.5rem;
+}
+
+.nav-btn {
+    line-height: 1.5em;
+}
+
+nav i {
+    padding-right: .5em;
+    vertical-align: middle;
+    color: #535353;
+}
+
+.menu i {
+    width: 1.5em;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.playlist {
+    height: calc(100% - 15rem);
+}
+
+
+.playlist h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.create-pl {
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+.create-pl i {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.playlist-list {
+    height: calc(100% - 5rem);
+    overflow-y: auto;
+}
+
+.playlist li {
+    line-height: 2em;
+    text-transform: capitalize;
 }
 
 .nav-bottom {
-    height: 3rem;
-    background-color: azure;
+    padding: .5em 0;
+    height: 4rem;
 }
 
-.logo {
-    width: 65%;
+.install-btn {
+    border-bottom: 1px solid #535353;
+    padding-bottom: .5em;
+    margin-bottom: .75em;
 }
 
+.user i {
+    padding: 0;
+    font-size: 2em;
+    line-height: 1em;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #535353;
+    border-radius: .9em;
+}
+
+.user a {
+    padding-left: .5em;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+/* CONTENT */
 .content {
     float: left;
     overflow-y: auto;
@@ -107,7 +180,7 @@ nav {
     color:  #ffffff;
 }
 
-/* CONTENT */
+/* MUSIC */
 .music {
     padding: 8rem 1rem 2rem;
     width: 100%;

@@ -10,7 +10,7 @@
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -20,15 +20,19 @@
             <!-- NAV -->
             <nav>
                 <div class="nav-top">
-                    <img class="logo" src="img/logo.svg" alt="logo">
-                    <div class="menu">
-                        <div class="nav-btn"><span>Home</span></div>
-                        <div class="nav-btn"><span>Cerca</span></div>
-                        <div class="nav-btn"><span>La tua libreria</span></div>
+                   <div class="logo mb-10">
+                    <img src="img/logo.svg" alt="logo">
+                   </div>
+                    <div class="menu mb-10">
+                        <div class="nav-btn"><i class="fas fa-home"></i><a href="">Home</a></div>
+                        <div class="nav-btn"><i class="fas fa-search"></i><a href="">Cerca</a></div>
+                        <div class="nav-btn"><i class="fas fa-bars"></i><a href="">La tua libreria</a></div>
                     </div>
-                    <div class="playlist">
-                        <h2>playlist</h2>
-                        <div class="create-pl">crea playlist</div>
+                </div>
+                <div class="playlist">
+                    <h2>playlist</h2>
+                    <div class="create-pl"><a href=""><i class="fas fa-plus-square"></i>crea playlist</a></div>
+                    <div class="playlist-list">
                         <ul>
                             <li> <a href="">nome playlist</a></li>
                             <li> <a href="">nome playlist</a></li>
@@ -41,8 +45,8 @@
                     </div>
                 </div>
                 <div class="nav-bottom">
-                    <div class="install-btn"><a href="">Installa app</a></div>
-                    <div class="user">John Doe</div>
+                    <div class="install-btn"><i class="far fa-arrow-alt-circle-down"></i><a href="">Installa app</a></div>
+                    <div class="user"><i class="far fa-user-circle"></i><a href="">John Doe</a></div>
                 </div>
             </nav>
             <!-- /NAV -->
