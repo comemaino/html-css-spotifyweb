@@ -69,10 +69,6 @@ nav {
     background-color: #000000;
 }
 
-/* nav > * {
-    padding: 0 1.5em;
-} */
-
 .nav-top {
     margin-bottom: 1em;
     height: 11rem;
@@ -98,7 +94,7 @@ nav {
     border-left: 2px solid #9ffa18;
 }
 
-
+/* PLAYLIST */
 .playlist {
     display: block;
     padding: 0 1.5em;
@@ -212,7 +208,7 @@ nav {
 }
 
 .cta-btn a {
-    border: 2px solid #535353;
+    border: 2px solid #ffffff;
     border-radius: 2em;
     padding: .8em 2em;
     width: 100%;
@@ -301,8 +297,7 @@ nav {
     overflow: hidden;
 }
 
-.row img {
-    display: block;
+.cover img {
     width: 100%;
 
 }
@@ -351,7 +346,69 @@ footer {
 footer > * {
     border: 1px solid black;
     height: 6rem;
-    flex-basis: 100%;
+
 
 }
 
+footer i {
+    margin-left: .4em;
+}
+
+.footer-side {
+    width: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-center {
+    width: 40%;
+    text-align: center;
+}
+
+.footer-side,
+.footer-center {
+    padding: 1em;
+}
+
+.playing {
+    display: flex;
+    align-items: center;
+}
+
+.playing .cover {
+    margin: 0 .5em 0 0;
+    width: 4rem;
+}
+
+
+.time {
+    display: flex;
+    align-items: center;
+    
+}
+
+.slider {
+    margin: 0 1em;
+    border-radius: .2em;
+    width: 100%;
+    height: .4em;
+    background-color: #535353;
+    
+}
+
+.elapsed {
+    border-radius: .2em;
+    width: 15%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.footer-side .buttons {
+    width: 8rem;
+}
+
+/* .footer-side div {
+    display: inline-block;
+    margin-right: .5em;
+} */
