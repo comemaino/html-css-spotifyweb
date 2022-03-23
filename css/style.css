@@ -6,6 +6,7 @@
 
 /* COMMON */
 body {
+    min-width: 500px;
     font-size: 87.5%;
     font-family: "Montserrat", sans-serif;
 }
@@ -24,12 +25,19 @@ ul {
 a {
     font-weight: 500;
     text-decoration: none;
-    color: grey;
+    color: #ffffff;
+}
+
+nav a,
+.cta a,
+.explore a {
+    opacity: .5;
 }
 
 a:hover {
-    color: #ffffff;
+    opacity: 1;
 }
+
 
 .container {
     width: 100%;
@@ -55,39 +63,47 @@ a:hover {
 /* NAV */
 nav {
     float: left;
-    padding: 1em;
+    padding: 1em 0;
     height: 100%;
     width: 16rem;
     background-color: #000000;
 }
 
+/* nav > * {
+    padding: 0 1.5em;
+} */
+
 .nav-top {
+    margin-bottom: 1em;
     height: 11rem;
 }
 
 .logo img {
+    padding: 0 1.5em;
     height: 2.5rem;
 }
 
 .nav-btn {
-    line-height: 1.5em;
+    padding: 0 1.5em;
+    line-height: 2.7em;
 }
 
-nav i {
-    padding-right: .5em;
+.nav-btn img {
+    margin-right: .5em;
+    width: 15%;
     vertical-align: middle;
-    color: #535353;
 }
 
-.menu i {
-    width: 1.5em;
-    line-height: 1.5em;
-    font-size: 1.5em;
-    text-align: center;
+.active {
+    border-left: 2px solid #9ffa18;
 }
+
 
 .playlist {
-    height: calc(100% - 15rem);
+    display: block;
+    padding: 0 1.5em;
+    height: calc(100% - 17rem);
+    overflow-y: auto;
 }
 
 
@@ -102,47 +118,64 @@ nav i {
     text-transform: capitalize;
 }
 
-.create-pl i {
-    font-size: 2em;
-    line-height: 2em;
+.create-pl span {
+    vertical-align: middle;
+    margin-right: .2em;
+    font-weight: 700;
 }
 
-.playlist-list {
-    height: calc(100% - 5rem);
-    overflow-y: auto;
+.create-pl .plus {
+    padding: 0 .3em;
+    font-size: 2em;
+    line-height: 1.7em;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .playlist li {
-    line-height: 2em;
+    line-height: 2.5em;
     text-transform: capitalize;
 }
 
 .nav-bottom {
-    padding: .5em 0;
-    height: 4rem;
+    padding: 0 1.5em;
+    height: 5rem;
+}
+
+.nav-bottom .nav-btn {
+    padding: 0;
 }
 
 .install-btn {
+    margin-bottom: .8em;
     border-bottom: 1px solid #535353;
-    padding-bottom: .5em;
-    margin-bottom: .75em;
 }
 
-.user i {
-    padding: 0;
-    font-size: 2em;
-    line-height: 1em;
+.install-btn img {
+    width: 10%;
+}
+
+.user-frame {
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: .5em;
+    width: 1.75em;
+    height: 1.75em;
+    line-height: 1.75em;
     vertical-align: middle;
-    color: #ffffff;
-    background-color: #535353;
-    border-radius: .9em;
+    background-color: #777777;
+    overflow: hidden;
+}
+
+.user-frame img {
+    width: 100%;
 }
 
 .user a {
-    padding-left: .5em;
+    margin-top: .5em;
     font-size: 1.2em;
     font-weight: 700;
-    color: #ffffff;
+    opacity: 1;
 }
 
 
